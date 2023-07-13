@@ -1,0 +1,22 @@
+{
+  "name": "frontendmentor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start" : "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haimyess/frontendmentor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haimyess/frontendmentor/issues"
+  },
+  "homepage": "https://github.com/Haimyess/frontendmentor#readme",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}

@@ -1,0 +1,113 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="rating.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="rate" class="content">
+        <p class="title">How did we do?</p>
+
+        <p class="message">
+          Please let us know how we did with your support request. All feedback
+          is apprciated to help us improve our offerings.
+        </p>
+        <!-- <p id="showMsg">dd</p>s -->
+
+        <form name="rating" id="rating-form">
+          <div class="numbers">
+            <input
+              value="1"
+              type="radio"
+              id="value1"
+              name="rating"
+              class="rating-input"
+            />
+            <label for="value1"><span>1</span></label>
+
+            <input
+              value="2"
+              type="radio"
+              id="value2"
+              name="rating"
+              class="rating-input"
+            />
+            <label for="value2"><span>2</span></label>
+
+            <input
+              value="3"
+              type="radio"
+              id="value3"
+              name="rating"
+              class="rating-input"
+            />
+            <label for="value3"><span>3</span></label>
+
+            <input
+              value="4"
+              type="radio"
+              id="value4"
+              name="rating"
+              class="rating-input"
+            />
+            <label for="value4"><span>4</span></label>
+
+            <input
+              value="5"
+              type="radio"
+              id="value5"
+              name="rating"
+              class="rating-input"
+            />
+            <label for="value5"><span>5</span></label>
+          </div>
+
+          <div>
+            <button type="type" class="btn">SUBMIT</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- ---------- -->
+      <!-- Thank you -->
+      <!-- ---------- -->
+
+      <div id="thankyou" class="hide thankyou">
+        <img src="" alt="" />
+        <p id="rate-count"></p>
+        <h2>Thank you!</h2>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more supprt, dont hesitate to get in touch
+        </p>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="/dest/interactive-rating-component-main/rating.js"></script>
+  </body>
+</html>

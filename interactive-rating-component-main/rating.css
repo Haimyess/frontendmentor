@@ -1,0 +1,156 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+
+
+    /* vars */
+    
+
+    --white: hsl(0, 0%, 100%);
+    --lightgrey: hsl(217, 12%, 63%) ;
+    --mediumgrey: hsl(216, 12%, 54%) ;
+    --darkblue: hsl(213, 19%, 18%); 
+    --verydarkblue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+   
+}
+
+body { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* border: 1px solid blue; */
+
+    /* background-color: var(--verydarkblue); */
+    /* color: var(--white) */
+
+}
+
+.container {
+    /* border: 1px solid red; */
+
+
+}
+
+.title {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.message {
+    color: var(--mediumgrey);
+}
+
+.content {
+    background-color: var(--verydarkblue);
+    width: 90%;
+    margin: 0 auto;
+    
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 1rem;
+
+    border-radius: 20px;
+}
+
+.content, .thankyou {
+    padding: 2rem;
+}
+
+.btn {
+    border: none;
+    color: var(--white);
+    background-color: var(--orange);
+    border-radius: 30px;
+    width: 100%;
+    padding: 1rem;
+    letter-spacing: .2rem;
+
+    /* Text */
+    font-size: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+/* .numbers div {
+    border: 1px solid green;
+} */
+
+input[type='radio'] {
+    /* visibility: hidden; */
+    position: fixed;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+
+label {
+    border: 1px solid red;
+    /* padding: 1rem; */
+    width: 50px ;
+    height: 50px;
+    text-align: center;
+    
+    border-radius: 50%;
+    color: var(--mediumgrey);
+    background-color: var(--darkblue);
+
+    display: table;
+    
+}
+
+label span {
+    /* display: inline-block; */
+    display: table-cell;
+    vertical-align: middle;
+    /* text-align: center; */
+}
+
+input[type='radio']:checked+label {
+    background-color: var(--orange);
+    color: var(--white);
+} 
+
+
+
+label:hover {
+    background-color: var(--lightgrey);
+    color: var(--white);
+}
+
+span {
+    display: inline-block;
+}
+
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.thankyou {
+   border: 1px solid green; 
+}
+
