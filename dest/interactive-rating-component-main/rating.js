@@ -26,6 +26,9 @@ function showThanks() {
     // function showMessage(msg: string, isValue: boolean) {
     const formDiv = document.getElementById("rate");
     const thankYouDiv = document.querySelector("#thankyou");
+    const messageSelect = document.getElementById('message-selection');
+    const strMsg = `You selected ${checkEl} out of 5`;
+    messageSelect.textContent = strMsg;
     formDiv === null || formDiv === void 0 ? void 0 : formDiv.classList.add("hide");
     thankYouDiv === null || thankYouDiv === void 0 ? void 0 : thankYouDiv.classList.remove("hide");
     thankYouDiv === null || thankYouDiv === void 0 ? void 0 : thankYouDiv.classList.add("show");
