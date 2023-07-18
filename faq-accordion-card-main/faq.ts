@@ -28,97 +28,78 @@ const dataFaqs = [
   },
 ];
 
-// ------------------
-// display all data
-// ------------------
 
-// div containeing each question
-// p containing the question
-// another p containing the text
 
-// Div containing the title and the textof each question
-// let questionDiv;
+function createQuestion() {
+
+}
 
 function displayData(data) {
-  console.log(data);
+  //   console.log(data);
 
   if (!data) throw new Error("There is no data to display");
 
   //  FAQ wrapper
-  const faqWrapper = document.getElementById('faq')
-//   const divContainer = document.createElement("div");
-  faqWrapper?.classList.add('faq-container')
+  const faqWrapper = document.getElementById("faq");
+  //   const divContainer = document.createElement("div");
+  faqWrapper?.classList.add("faq-container");
 
-
-//   looping the data
-  for (const question of dataFaqs) {
-    console.log(question);
-
-    // Every loop i create a div
+  for (const question of data) {
     const questionDiv = document.createElement("div");
-    questionDiv.classList.add('question')
-
-    // Each div will have 2 paragraphs containing the title and the text
+    questionDiv.classList.add("question");
 
     const questionTitle = document.createElement("p");
-    const questionText = document.createElement("p");
-    const questionArrow = document.createElement('img')
-    questionArrow.src = '/faq-accordion-card-main/images/icon-arrow-down.svg'
-    questionArrow.classList.add('arrow')
-
     questionTitle.textContent = question.title;
-    questionTitle.classList.add('question-title')
+    questionTitle.classList.add("question-title");
+
+
+    const questionText = document.createElement("p");
     questionText.textContent = question.text;
-    questionText.classList.add('hide', 'text')
-    // I will append the text and title to the div
+    questionText.classList.add("hide", "text");
+
+
+
+    const questionArrow = document.createElement("img");
+    questionArrow.src = "/faq-accordion-card-main/images/icon-arrow-down.svg";
+    questionArrow.classList.add("arrow");
+
 
     questionDiv.append(questionTitle, questionText, questionArrow);
-
-    // And the div contaning the title and the text will be appended to the wrapper div
-
     faqWrapper?.appendChild(questionDiv);
 
+    questionDiv.addEventListener("click", () =>
+      toggleShow(questionText, questionTitle, questionArrow, questionDiv)
+    );
+  }
 }
 
-    // faqWrapper?.appendChild(divContainer)
+function toggleShow(selected, title, arrow, div) {
+
+    if(!selected || !title) throw new Error('Missing requirements')
+  const current = !selected.classList.contains("hide");
+
+  const content = [...document.querySelectorAll(".text")];
+  for (const question of content) question.classList.add("hide");
   
+  const titles = [...document.querySelectorAll(".question-title")];
+  for (const title of titles) {
+    title.classList.remove("question-title--selected");
+
+  }
+  const divs = [...document.querySelectorAll(".question")];
+  for (const div of divs) {
+    console.log(div)
+    // div.classList.remove("active");
+
+  }
+
+  if (!current) {
+    selected.classList.toggle("hide");
+    title.classList.add("question-title--selected");
+    arrow.classList.add('active')
+  }
+
+  // current.classList.toggle('hide')
 }
 
 displayData(dataFaqs);
-
-// ---------------------------
-// create function to open
-// ---------------------------
-// when one is selected close the other one
-
-
- const questions = [...document.querySelectorAll('.question')]
-
-  questions.forEach(question => {
-    return question.addEventListener('click', (e) =>  toggleShow(e))
-  })
-
-
-function toggleShow(e) {
-  // if is the current
-
-for(const acc of questions) {
-    acc.classList.add('hide')
-}
-  console.log('Clicked', e.target)
-
-  const target = e.target
-
-
-  const text = target.nextSibling;
-//   console.log(text)
-  text.classList.toggle('hide')
-//   text.classList.remove('hide')
-//   text.classList.add('show')
-if(!target) {
-target.classList.add('show')
-}
- 
-
-  
-}
