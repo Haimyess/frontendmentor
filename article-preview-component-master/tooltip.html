@@ -1,0 +1,78 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="tooltip.css" />
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
+  <body>
+    <!-- Card -->
+    <div class="card">
+      <!-- Image container -->
+      <div class="img-container">
+        <img
+          class="img"
+          src="/article-preview-component-master/images/drawers.jpg"
+          alt=""
+        />
+      </div>
+
+      <!-- Content container -->
+      <div class="content">
+        <!-- Title -->
+        <h4 class="title">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h4>
+        <p class="text">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+      </div>
+
+      <!-- Share container -->
+      <div class="share">
+        <!-- Author  -->
+        <div class="author">
+          <img class="author-img" src="" alt="" />
+          <div>
+            <span class="author-name"> Michelle Appleton </span>
+            <span class="date"> 28 Jun 2020</span>
+          </div>
+        </div>
+
+        <div class="tooltip-mobile">
+          <span class="tooltip-share">Share</span>
+          <!-- Facebook icon -->
+          <span class="icon">F</span>
+          <!-- Twitter icon -->
+          <span class="icon">T</span>
+          <!-- Pinterest icon -->
+          <span class="icon">P</span>
+        </div>
+
+        <!-- Share button -->
+        <div class="share-btn">
+          <button class="btn">Share</button>
+
+          <!-- Tooltip -->
+          <div class="tooltip-desktop"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="tooltip.js"></script>
+  </body>
+</html>

@@ -65,6 +65,7 @@ function toggleShow(selected, title, arrow, div) {
     for (const title of titles) {
         title.classList.remove("question-title--selected");
     }
+    //   Check this part and make the arrow come back to normal state
     const divs = [...document.querySelectorAll(".question")];
     for (const div of divs) {
         console.log(div);
