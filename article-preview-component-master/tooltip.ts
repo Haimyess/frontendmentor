@@ -9,7 +9,7 @@
 
 
 // Creation of the card
-function createCard(data : Object) {
+// function createCard(data : Object) {
 
     // Create image
 
@@ -21,7 +21,7 @@ function createCard(data : Object) {
 
     // 
 
-}
+// }
 
 // createCard()
 
@@ -35,11 +35,17 @@ function createButton() {
 }
 
 
-
+console.log('hi')
 // The author class we will change the content
 
+
+const shareBtn = document.getElementById('share')
+console.log(shareBtn)
 // Button functionality
 
 function share() {
 
+    // select author
+
+    // show tooltip mobile 
 }
