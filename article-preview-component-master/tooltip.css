@@ -32,7 +32,7 @@ body {
 
 .img {
   width: 100%;
-  height: 450px;
+  /* height: 450px; */
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -118,13 +118,23 @@ body {
   width: 30px;
 }
 
-.tooltip-mobile {
+.tooltip {
+  background-color: hsl(214, 17%, 51%);
+  /* display: none; */
+}
+
+
+.active {
+  background-color: hsl(214, 17%, 51%);
+
+}
+
+
+.hide {
   display: none;
 }
 
-.tooltip-desktop {
-
-}
+/* Design of the tooltip should be 2. mobile and desktop. this way we alsways use the same javascript and we change bassed on screen size. */
 
 
 @media only screen and  (min-width: 376px) {

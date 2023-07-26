@@ -45,7 +45,7 @@
       <!-- Share container -->
       <div class="share">
         <!-- Author  -->
-        <div class="author">
+        <div id="author" class="author">
           <img
             class="author-img"
             src="/article-preview-component-master/images/avatar-michelle.jpg"
@@ -57,14 +57,26 @@
           </div>
         </div>
 
-        <div class="tooltip-mobile">
+        <div id="tooltip" class="hide tooltip">
           <span class="tooltip-share">Share</span>
           <!-- Facebook icon -->
-          <span class="icon">F</span>
+          <span class="icon"
+            ><img
+              src="/article-preview-component-master/images/icon-facebook.svg"
+              alt=""
+          /></span>
           <!-- Twitter icon -->
-          <span class="icon">T</span>
+          <span class="icon"
+            ><img
+              src="/article-preview-component-master/images/icon-twitter.svg"
+              alt=""
+          /></span>
           <!-- Pinterest icon -->
-          <span class="icon">P</span>
+          <span class="icon"
+            ><img
+              src="/article-preview-component-master/images/icon-pinterest.svg"
+              alt=""
+          /></span>
         </div>
 
         <!-- Share button -->
@@ -75,9 +87,6 @@
               alt=""
             />
           </button>
-
-          <!-- Tooltip -->
-          <div class="tooltip-desktop"></div>
         </div>
       </div>
     </div>
