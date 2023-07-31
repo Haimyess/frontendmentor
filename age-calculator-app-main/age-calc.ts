@@ -40,11 +40,16 @@ function calculateAge(dayVal: string, monthVal: string, yearVal: string) {
   displayAge(yearCount, monthCount, dayCount);
 }
 
-
 function displayAge(year: number, month: number, day: number) {
+  if (month > 0) {
+    const monthOutput = (document.getElementById("months")?.innerText = month);
+  }
+
+  const text = document.querySelector(".output-wrapper :nth-child(2)");
+  // console.log(text);
+  text?.classList.add("hide");
+
   const yearOutput = (document.getElementById("years")?.innerText = year);
-  const monthOutput = (document.getElementById("months")?.innerText = month);
+
   const dayOutput = (document.getElementById("days")?.innerText = day);
 }
-
-

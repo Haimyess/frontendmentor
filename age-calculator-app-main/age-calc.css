@@ -31,7 +31,7 @@
 
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 5rem;
   padding: 3rem 1.5rem;
   margin: 2rem;
   /* border: 1px solid red; */
@@ -58,11 +58,13 @@
 .output-wrapper span {
   color: var(--purple);
   background-color: var(--white);
+  font-style: italic;
 }
 .output-wrapper p {
   background-color: var(--white);
   font-size: 4rem;
   font-weight: 800;
+  font-style: italic;
  
 
 }
@@ -85,7 +87,7 @@ label {
 
 input {
   width: 100%;
-  padding: .8rem 1rem;
+  padding: .5rem 1rem;
   border: 1px solid var(--lighGrey);
   border-radius: 10px;
   background-color: var(--white);
@@ -126,4 +128,8 @@ input {
   width: 30px;
   object-fit: contain;
   background-color: var(--purple);
+}
+
+.hide {
+  display: none;
 }

@@ -28,7 +28,12 @@ function calculateAge(dayVal, monthVal, yearVal) {
 }
 function displayAge(year, month, day) {
     var _a, _b, _c;
-    const yearOutput = ((_a = document.getElementById("years")) === null || _a === void 0 ? void 0 : _a.innerText = year);
-    const monthOutput = ((_b = document.getElementById("months")) === null || _b === void 0 ? void 0 : _b.innerText = month);
+    if (month > 0) {
+        const monthOutput = ((_a = document.getElementById("months")) === null || _a === void 0 ? void 0 : _a.innerText = month);
+    }
+    const text = document.querySelector(".output-wrapper :nth-child(2)");
+    // console.log(text);
+    text === null || text === void 0 ? void 0 : text.classList.add("hide");
+    const yearOutput = ((_b = document.getElementById("years")) === null || _b === void 0 ? void 0 : _b.innerText = year);
     const dayOutput = ((_c = document.getElementById("days")) === null || _c === void 0 ? void 0 : _c.innerText = day);
 }
