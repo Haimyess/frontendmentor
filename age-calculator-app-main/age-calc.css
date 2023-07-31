@@ -1,0 +1,129 @@
+* {
+    /* Resets */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    /* Variables */
+   
+     --purple : hsl(259, 100%, 65%) ;
+     --lightRed: hsl(0, 100%, 67%);
+
+
+    --white: hsl(0, 0%, 100%) ;
+    --offWhite: hsl(0, 0%, 94%) ;
+    --lighGrey : hsl(0, 0%, 86%); 
+    --smokeyGrey: hsl(0, 1%, 44%);
+    --offBlack: hsl(0, 0%, 8%);
+
+
+    /* Generals */
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--offWhite);
+  }
+ 
+
+
+
+/* Css */
+
+.container {
+
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding: 3rem 1.5rem;
+  margin: 2rem;
+  /* border: 1px solid red; */
+  border-radius: 30px 30px 100px 30px ;
+  background-color: var(--white);
+}
+
+.input-wrapper {
+  display: flex;
+  width: 100%;
+  gap: .5rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+}
+
+.output-wrapper {
+  display: flex;
+    flex-direction: column;
+    line-height: 4.5rem;
+   
+}
+
+.output-wrapper span {
+  color: var(--purple);
+  background-color: var(--white);
+}
+.output-wrapper p {
+  background-color: var(--white);
+  font-size: 4rem;
+  font-weight: 800;
+ 
+
+}
+
+.inputs-group {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+  background-color: var(--white);
+}
+
+label {
+  font-size: .8rem;
+  color: var(--smokeyGrey);
+  font-weight: 300;
+  background-color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+}
+
+input {
+  width: 100%;
+  padding: .8rem 1rem;
+  border: 1px solid var(--lighGrey);
+  border-radius: 10px;
+  background-color: var(--white);
+  font-size: 1.5rem;
+
+
+}
+
+/* hr {
+  border-color:var(--lighGrey);
+  background-color: var(--lighGrey);
+} */
+ input::-webkit-outer-spin-button,
+ input::-webkit-inner-spin-button {
+   display: none;
+ }
+
+ .btn-wrapper {
+  position: relative;
+ }
+
+.result-btn {
+
+  position: absolute; 
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: var(--purple);
+  
+}
+
+.result-btn img {
+  width: 30px;
+  object-fit: contain;
+  background-color: var(--purple);
+}

@@ -1,0 +1,68 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="age-calc.css" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Inputs -->
+      <div class="input-wrapper">
+        <div class="inputs-group">
+          <label for="">Day</label>
+          <input type="number" id="day-input" />
+        </div>
+        <div class="inputs-group">
+          <label for="">Month</label>
+          <input type="number" />
+        </div>
+        <div class="inputs-group">
+          <label for="">Year</label>
+          <input type="number" />
+        </div>
+      </div>
+
+      <div class="btn-wrapper">
+        <hr />
+        <button class="result-btn">
+          <img
+            src="/age-calculator-app-main/assets/images/icon-arrow.svg"
+            alt=""
+          />
+        </button>
+      </div>
+      <!-- Result -->
+      <div class="output-wrapper">
+        <!-- Years -->
+        <p><span id="years"></span> years</p>
+        <!-- Months -->
+        <p><span id="months"></span> months</p>
+        <!-- Days  -->
+        <p><span id="days"></span> days</p>
+      </div>
+    </div>
+
+    <script src="/dest/age-calculator-app-main/age-calc.js"></script>
+  </body>
+</html>
