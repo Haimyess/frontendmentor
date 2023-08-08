@@ -2,7 +2,7 @@
 const btns = [...document.querySelectorAll("button")];
 btns.forEach((btn) => btn.addEventListener("click", (e) => getPercentage(e)));
 
-function getPercentage(e ) {
+function getPercentage(e) {
   const percentageSelected = e.target.value;
 
   calculateTip(percentageSelected);
