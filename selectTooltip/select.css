@@ -10,3 +10,9 @@
 .boldText {
     font-weight: bold;
 }
+
+.selected {
+    
+    background-color: red ;
+    /* border: 1px solid red; */
+}
